@@ -12,8 +12,22 @@
 }
 
 html, body {
-  overflow-x: hidden;
   height: 100vh;
+}
+
+body {
+  flex: 1 0 auto;
+}
+
+.content-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  display: flex;
+  flex: 1 0 auto;
 }
 
 footer {
@@ -21,7 +35,7 @@ footer {
   box-shadow: 0 50vh 0 50vh #80afb1;
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
   .footer {
     flex-wrap: none;
   }
@@ -32,5 +46,29 @@ footer {
 
   .footer-links a {
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    flex-wrap: none;
+  }
+
+  .footer-links {
+    padding-left: 3rem;
+  }
+
+  .footer-links a {
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .navbar-toggler {
+    margin-right: 0;
   }
 }
