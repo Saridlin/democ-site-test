@@ -19,6 +19,10 @@ body {
   flex: 1 0 auto;
 }
 
+navbar-brand {
+  color: #fff;
+}
+
 .content-container {
   height: 100vh;
   display: flex;
@@ -31,22 +35,17 @@ body {
 }
 
 footer {
-  background-color: #80afb1;
-  box-shadow: 0 50vh 0 50vh #80afb1;
+  background-color: #1e4486;
+  box-shadow: 0 50vh 0 50vh #1e4486;
 }
 
-@media screen and (max-width: 575px) {
-  .footer {
-    flex-wrap: none;
-  }
+footer a {
+  text-decoration: none;
+}
 
-  .footer-links {
-    padding-left: 3rem;
-  }
-
-  .footer-links a {
-    text-align: left;
-  }
+.btn-card {
+  text-align: start;
+  font-weight: 100;
 }
 
 @media screen and (max-width: 575px) {
