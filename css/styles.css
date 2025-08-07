@@ -34,6 +34,20 @@ navbar-brand {
   flex: 1 0 auto;
 }
 
+.related {
+  color: #6ea8fe;
+  font-weight: 400;
+  font-size: larger;
+}
+
+.related:hover{
+  color: #FAC65E;
+}
+
+.related h5 {
+  color: #FBFBFF;
+}
+
 footer {
   background-color: #1e4486;
   box-shadow: 0 50vh 0 50vh #1e4486;
