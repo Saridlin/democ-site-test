@@ -38,6 +38,7 @@ navbar-brand {
   color: #6ea8fe;
   font-weight: 400;
   font-size: larger;
+  margin-right: 7px;
 }
 
 .related:hover{
