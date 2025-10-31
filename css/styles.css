@@ -30,6 +30,8 @@ navbar-brand {
 }
 
 .container-fluid {
+  padding-right:0;
+  padding-left:0;
   display: flex;
   flex: 1 0 auto;
 }
@@ -85,4 +87,37 @@ footer a {
   .navbar-toggler {
     margin-right: 0;
   }
+}
+
+.carousel-inner .item {
+  width: 100%;
+  height: 82vh;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.ad1 {
+  background: url(../images/HomePage/hp1-crop.jpg) no-repeat center center;
+}
+
+.ad2 {
+  background: url(../images/HomePage/hp2-crop.jpg) no-repeat center center;
+}
+
+.ad3 {
+  background: url(../images/HomePage/hp3-crop.jpg) no-repeat center center;
+}
+
+.ad4 {
+  background: url(../images/HomePage/hp4-crop.jpg) no-repeat center center;
+}
+
+.ad5 {
+  background: url(../images/HomePage/hp6-crop.jpg) no-repeat center center;
+}
+
+.ad6 {
+  background: url(../images/HomePage/hp7-crop.jpg) no-repeat center center;
 }

@@ -52,7 +52,7 @@ main section { /* fade in text after background img */
 
 h1, h2 {
   color: var(--text-color);
-  font-weight: lighter;
+  font-weight: 600;
 }
 
 h1 {

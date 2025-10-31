@@ -12,6 +12,29 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+  <div class="modal fade" id="credits" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Credits</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Software Design and Developer<br>
+            Olivia Cacdac</p>
+            <p>Additional Thanks to the ICA San Jose Team<br>
+            James G. Leventhal<br>
+            Zoë Latzer<br>
+            Haley Kerrigan<br>
+            Sam Marks<br>
+            Makeda Barr-Brown<br>
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="content-container">
     <nav class="navbar navbar-expand-sm justify-content-between p-2 bg-body-tertiary">
       <a class="navbar-brand" href="index.html">
@@ -60,23 +83,32 @@
           <div class="carousel-indicators">
               <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active"></button>
               <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="5"></button>
           </div>
 
           <figure class="figure">
           <!-- The slideshow/carousel -->
           <div class="carousel-inner">
               <div class="carousel-item active">
-                  <img src="images/DemocGames/dg1.jpg" class="d-block img-fluid rounded" style="width:100%">
-                  <!--<div class="carousel-caption d-none d-md-block">
-                    <h5>label ex 1</h5>
-                    <p>example of how a carousel label would look</p>
-                  </div>-->
+                  <img src="images/ICA-Ex/ica1.jpg" class="d-block img-fluid rounded" style="width:100%">
               </div>
               <div class="carousel-item">
-                  <img src="images/DemocGames/dg2.jpg" class="d-block img-fluid rounded" style="width:100%">
+                  <img src="images/ICA-Ex/ica2.jpg" class="d-block img-fluid rounded" style="width:100%">
               </div>
               <div class="carousel-item">
-                  <img src="images/DemocGames/dg3.jpg" class="d-block img-fluid rounded" style="width:100%">
+                  <img src="images/ICA-Ex/ica3.jpg" class="d-block img-fluid rounded" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/ICA-Ex/ica4.jpg" class="d-block img-fluid rounded" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/ICA-Ex/ica5.jpg" class="d-block img-fluid rounded" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/ICA-Ex/ica6.jpg" class="d-block img-fluid rounded" style="width:100%">
               </div>
           </div>
 
@@ -91,34 +123,36 @@
         </div>
 
         <div class="row pt-2 justify-content-center">
-          <div class="col-sm-6" style="text-align: left;">
+          <div class="col-sm-9" style="text-align: left;">
             <h5>
               Related Links
             </h5>
-            <a class="related" href="files/dg-game-credits.pdf">Credits</a>
+            <a class="related" data-bs-toggle="modal" data-bs-target="#credits">Credits</a>
             <a class="related" href="files/ica-curator_statement.pdf">Curatorial Statement</a>
             <a class="related" href="https://www.icasanjose.org/archive/archive-exhibitions/thefuturedemocraciesproject/">SJICA Site</a>
             <a class="related" href="https://www.zyzzyva.org/2024/12/13/dreaming-metapluralism-jonathon-keatss-the-future-democracies-laboratory/">Zyzzyva Article</a>
             <a class="related" href="https://www.aam-us.org/2025/01/14/speculative-options-for-the-future-of-democracy/">AAM Article</a>
+            <a class="related" href="ica-gallery.html">Gallery</a>
           </div>
-          <div class="col-sm-6" style="text-align: right;">
-            <h5>
+          <div class="col-sm-3" style="text-align: right;">
+            <!--<h5>
               Related Projects
             </h5>
-            <a class="related" href="">related page here</a>
+            <a class="related" href="">related page here</a>-->
           </div>
         </div>
 
       </div>
     </div>
 
-    <footer class="d-flex align-items-center justify-content-between pt-2 mt-3" style="text-align: center">
-      <div class="col-sm-4 footer-links">
+    <footer class="justify-content-between pt-2 mt-3">
+      <div class="row px-5">
+      <div class="col-sm-6 footer-links">
         <a class="p-1" href="https://cadre.sjsu.edu/index.html"><h5>CADRE Center for New Media</h5></a>
       </div>
-      <div class="col-sm-4 footer-links">
+      <div class="col-sm-6 footer-links" style="text-align: right;">
         <a class="p-1" href="https://www.sjsu.edu/"><h5>San José State University</h5></a>
-      </div>
+      </div></div>
     </footer>
   </div>
   

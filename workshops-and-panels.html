@@ -12,6 +12,26 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+    <div class="modal fade" id="credits" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Credits</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Rhonda Holberton<br>
+            Joel Slayton<br>
+            Jordan Liz<br>
+            Joanne Rondilla</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
   <div class="content-container">
     <nav class="navbar navbar-expand-sm justify-content-between p-2 bg-body-tertiary">
       <a class="navbar-brand" href="index.html">
@@ -45,12 +65,15 @@
     <div class="container-fluid">
       <div class="row px-5 justify-content-center">
         <div class="row col-sm-12 pb-2 mt-3 pt-2">
-          <h1>Democracy Workshops and Panels</h1>
-          <p><i>blurb</i></p>
-          <h6>date</h6>
+          <h1>Democracy Project</h1>
+          <p><i>Workshops and Panels</i></p>
+          <h6>September-October 2019</h6>
         </div>
         <div class="col-lg-6 px-4">
-          <p>desc</p>
+          <p>This series of workshops and the accompanying panel discussion marked the starting point for the larger project.</p>
+          <p>Aimed at exploring new ways to strengthen American democracy, the event brought together a diverse group of voices from across the university community. The panel focused on strategies for improving the voting system, including the potential use of emerging technologies, randomization, and automated systems.</p>
+          <p>The workshops that followed invited students and faculty to experiment with these ideas firsthand — examining how data representation shapes our understanding of political processes, and exploring simulations of voting systems by district and voter behavior through the use of random decision-making models.
+          </p>
         </div>
 
 
@@ -60,23 +83,36 @@
           <div class="carousel-indicators">
               <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active"></button>
               <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="3"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="4"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="5"></button>
+              <button type="button" data-bs-target="#slideshow" data-bs-slide-to="6"></button>
           </div>
 
           <figure class="figure">
           <!-- The slideshow/carousel -->
           <div class="carousel-inner">
               <div class="carousel-item active">
-                  <img src="images/DemocGames/dg1.jpg" class="d-block img-fluid rounded" style="width:100%">
-                  <!--<div class="carousel-caption d-none d-md-block">
-                    <h5>label ex 1</h5>
-                    <p>example of how a carousel label would look</p>
-                  </div>-->
+                  <img src="images/WorkPanels/wp1.jpg" class="d-block img-fluid rounded" style="width:100%">
               </div>
               <div class="carousel-item">
-                  <img src="images/DemocGames/dg2.jpg" class="d-block img-fluid rounded" style="width:100%">
+                  <img src="images/WorkPanels/wp2.jpg" class="d-block img-fluid rounded" style="width:100%">
               </div>
               <div class="carousel-item">
-                  <img src="images/DemocGames/dg3.jpg" class="d-block img-fluid rounded" style="width:100%">
+                  <img src="images/WorkPanels/wp3.jpg" class="d-block img-fluid rounded" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/WorkPanels/wp4.jpg" class="d-block img-fluid rounded" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/WorkPanels/wp5.jpg" class="d-block img-fluid rounded" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/WorkPanels/wp6.jpg" class="d-block img-fluid rounded" style="width:100%">
+              </div>
+              <div class="carousel-item">
+                  <img src="images/WorkPanels/wp7.jpg" class="d-block img-fluid rounded" style="width:100%">
               </div>
           </div>
 
@@ -91,31 +127,36 @@
         </div>
 
         <div class="row pt-2 justify-content-center">
-          <div class="col-sm-6" style="text-align: left;">
+          <div class="col-sm-9" style="text-align: left;">
             <h5>
               Related Links
             </h5>
-            <a class="related" href="files/dg-game-credits.pdf">Credits</a>
-            <a class="related" href="bg-gallery.html">Gallery</a>
+            <a class="related" data-bs-toggle="modal" data-bs-target="#credits">Credits</a>
+            <a class="related" href="files/wp-democracy-panel-bio.pdf">Panel Bio</a>
+            <a class="related" href="files/wp-democracy-flyer.png">Flyer</a>
+            <a class="related" href="files/wp-random_sheet.pdf">Random Data Sheet</a>
+            <a class="related" href="files/wp-systems-workshop.MOV">Systems Workshop</a>
+            <a class="related" href="wp-gallery.html">Gallery</a>
           </div>
-          <div class="col-sm-6" style="text-align: right;">
-            <h5>
+          <div class="col-sm-3" style="text-align: right;">
+            <!--<h5>
               Related Projects
             </h5>
-            <a class="related" href="">related page here</a>
+            <a class="related" href="">related page here</a>-->
           </div>
         </div>
 
       </div>
     </div>
 
-    <footer class="d-flex align-items-center justify-content-between pt-2 mt-3" style="text-align: center">
-      <div class="col-sm-4 footer-links">
+    <footer class="justify-content-between pt-2 mt-3">
+      <div class="row px-5">
+      <div class="col-sm-6 footer-links">
         <a class="p-1" href="https://cadre.sjsu.edu/index.html"><h5>CADRE Center for New Media</h5></a>
       </div>
-      <div class="col-sm-4 footer-links">
+      <div class="col-sm-6 footer-links" style="text-align: right;">
         <a class="p-1" href="https://www.sjsu.edu/"><h5>San José State University</h5></a>
-      </div>
+      </div></div>
     </footer>
   </div>
   
